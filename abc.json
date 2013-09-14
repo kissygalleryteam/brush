@@ -1,0 +1,14 @@
+{
+    "name": "brush",
+    "version": "1.0",
+    "desc": "",
+    "cover": "",
+    "tag":"1.0.0",
+    "author": {
+        "name": "kissy-team",
+        "email": "yacheng.sz@taobao.com",
+        "page": ""
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
