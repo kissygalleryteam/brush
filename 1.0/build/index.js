@@ -30,13 +30,13 @@ KISSY.add('gallery/brush/1.0/painting/map',function(S, E, D, N) {
     S.augment(Map, S.EventTarget, {
         
         _init: function(brush, config){
-            
+            console.log(brush);
             // ���ӵ���������ʽ
             brush.config.mapNode.css({'position': 'relative'});
 
             // ���ӵ�ͼ��ʽ
             for(k in config){
-                brush.css[k](brush.config.mapNode, config[k]);
+                brush.config.mapNode.css(k, config[k]);
             }
 
             if(brush.ifSVG){
@@ -833,7 +833,7 @@ KISSY.add('gallery/brush/1.0/index',function (S, Base, D, N, E, UA, Map, Circle,
         
         var self = this;
         //调用父类构造函数
-        Brush.superclass.constructor.call(self, comConfig);
+        Brush.superclass.constructor.call(self, {});
 
         bursh.config.mapNode = $(hook);
 
@@ -842,9 +842,6 @@ KISSY.add('gallery/brush/1.0/index',function (S, Base, D, N, E, UA, Map, Circle,
         if(ieEngine<9){
             bursh.ifSVG = false;
         }
-
-        // 载入基础设定和样式库
-        bursh.css = Base.css;
 
     }
     S.extend(Brush, Base, /** @lends Brush.prototype*/{

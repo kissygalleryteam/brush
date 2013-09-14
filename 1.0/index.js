@@ -23,7 +23,7 @@ KISSY.add(function (S, Base, D, N, E, UA, Map, Circle, Line, Rect, Ellipse, Poly
         
         var self = this;
         //调用父类构造函数
-        Brush.superclass.constructor.call(self, comConfig);
+        Brush.superclass.constructor.call(self, {});
 
         bursh.config.mapNode = $(hook);
 
@@ -32,9 +32,6 @@ KISSY.add(function (S, Base, D, N, E, UA, Map, Circle, Line, Rect, Ellipse, Poly
         if(ieEngine<9){
             bursh.ifSVG = false;
         }
-
-        // 载入基础设定和样式库
-        bursh.css = Base.css;
 
     }
     S.extend(Brush, Base, /** @lends Brush.prototype*/{
