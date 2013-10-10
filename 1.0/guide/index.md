@@ -4,7 +4,7 @@ brush是一个基于 css api 设计的矢量绘图库。
 （基于 kissy，使用svg+vml实现，浏览器全兼容）
 
 * 版本：1.0
-* 作者：kissy-team
+* 作者：亚城
 * demo：[http://gallery.kissyui.com/brush/1.0/demo/index.html](http://gallery.kissyui.com/brush/1.0/demo/index.html)
 
 ## 初始化组件
