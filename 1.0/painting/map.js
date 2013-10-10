@@ -17,7 +17,7 @@ KISSY.add(function(S, E, D, N) {
     S.augment(Map, S.EventTarget, {
         
         _init: function(brush, config){
-            console.log(brush);
+            
             // 添加滴入基础样式
             brush.config.mapNode.css({'position': 'relative'});
 
