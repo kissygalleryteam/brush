@@ -1,0 +1,19 @@
+.header{
+	padding: 30px;
+	border-bottom: #e0e0e0 1px solid;
+	font-size: 18px;
+	color: #999;
+}
+.content{
+	padding: 30px;
+	text-align: center;
+}
+.content .map{
+	margin: 0 auto;
+}
+.footer{
+	padding: 30px;
+	border-top: #eee 1px solid;
+	text-align: right;
+	color: #999;
+}
